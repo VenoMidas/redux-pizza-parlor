@@ -9,22 +9,22 @@ merge pull request
 `git pull origin main`
 return to top to start new branch
 
-- [ ] Mark
+- [X] Mark
 ## Redux setup
-- [ ] all in index.js only
-- [ ] Reducers
-    - [ ] `cart` `ADDTO_CART` state = [], return [...state, action.payload]
-    - [ ] `totalCost` `UPDATE_TOTAL` state = 0, return state + action.payload (pizza.price) 
-    - [ ] `customerName` `SET_CUSTOMERNAME` state = '' return action.payload
-    - [ ] `streetAddress` `SET_STREETADDRESS` state = '' return action.payload
-    - [ ] `city` `SET_CITY` state = '' return action.payload
-    - [ ] `zip` `SET_ZIP` state = '' return action.payload
-    - [ ] `type` (pickup/delivery) `SET_TYPE` state = 'delivery' (would set default to delivery?) return action.payload
-    - [ ] `CLEAR_ALL` for all required reducers
-- [ ] store instance
-    - [ ] combine reducers
-    - [ ] apply middleware logger
-- [ ] Wrap App in provider
+- [X] all in index.js only
+- [X] Reducers
+    - [X] `cart` `ADDTO_CART` state = [], return [...state, action.payload]
+    - [X] `totalCost` `UPDATE_TOTAL` state = 0, return state + action.payload (pizza.price) 
+    - [X] `customerName` `SET_CUSTOMERNAME` state = '' return action.payload
+    - [X] `streetAddress` `SET_STREETADDRESS` state = '' return action.payload
+    - [X] `city` `SET_CITY` state = '' return action.payload
+    - [X] `zip` `SET_ZIP` state = '' return action.payload
+    - [X] `type` (pickup/delivery) `SET_TYPE` state = 'delivery' (would set default to delivery?) return action.payload
+    - [X] `CLEAR_ALL` for all required reducers
+- [X] store instance
+    - [X] combine reducers
+    - [X] apply middleware logger
+- [X] Wrap App in provider
 
 - [ ] Oscar
 ## Router setup
