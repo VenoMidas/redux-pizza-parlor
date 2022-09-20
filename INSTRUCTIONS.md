@@ -114,10 +114,10 @@ return to top to start new branch
 ## For Meaghan
 - Reach out if you have questions with testing on Postman
 
-- [ ] Can do all basic setup on one branch (initial_component_setup) or something like that?
-- [ ] create SelectPizza, PizzaItem, CustomerInformation, Checkout, Admin components
-- [ ] inside components do a simple <h1> that says this is the _blank_ component
-- [ ] simple button that does history.push to next page (routes are up top, and will not work until we all merge)
+- [X] Can do all basic setup on one branch (initial_component_setup) or something like that?
+- [X] create SelectPizza, PizzaItem, CustomerInformation, Checkout, Admin components
+- [X] inside components do a simple <h1> that says this is the _blank_ component
+- [X] simple button that does history.push to next page (routes are up top, and will not work until we all merge)
 
 - No fancy styling required, save MUI for later
 
