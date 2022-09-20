@@ -29,14 +29,14 @@ return to top to start new branch
 - [ ] Oscar
 ## Router setup
  - in app.jsx only
- - [ ] import { HashRouter as Router, Route, Link } from 'react-router-dom';
- - [ ] import components (even if they don't exist yet)
- - [ ] setup router
-    - [ ] set routes
-    - [ ] home page '/' is `SelectPizza` component (screen one)
-    - [ ] '/customer/information' is `CustomerInformation` component (screen two)
-    - [ ] '/checkout' is `Checkout` component (screen three)
-    - [ ] '/admin/ displays `Admin` component
+ - [x] import { HashRouter as Router, Route, Link } from 'react-router-dom';
+ - [x] import components (even if they don't exist yet)
+ - [x] setup router
+    - [x] set routes
+    - [x] home page '/' is `SelectPizza` component (screen one)
+    - [x] '/customer/information' is `CustomerInformation` component (screen two)
+    - [x] '/checkout' is `Checkout` component (screen three)
+    - [x] '/admin/ displays `Admin` component
 
 
 ## Header Component
