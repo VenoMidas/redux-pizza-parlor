@@ -26,7 +26,7 @@ return to top to start new branch
     - [X] apply middleware logger
 - [X] Wrap App in provider
 
-- [ ] Oscar
+- [X] Oscar
 ## Router setup
  - in app.jsx only
  - [x] import { HashRouter as Router, Route, Link } from 'react-router-dom';
@@ -41,7 +41,7 @@ return to top to start new branch
 
 ## Header Component
 - See screen-one.png wireframe
-- [ ] Make into separate component
+- [X] Make into separate component
 - [ ] Display Total: `cart` from redux
     - [ ] `cart` will be an array of objects (pizzas)
     - [ ] for/of loop on cart and sum price
@@ -51,7 +51,7 @@ return to top to start new branch
 
 ## SelectPizza component
 - See screen-one.png wireframe
-- [ ] Create component
+- [X] Create component
 - [ ] axios `get /api/pizza`
     - [ ] store results in `pizzaArray`
 - [ ] map array 
@@ -60,14 +60,14 @@ return to top to start new branch
 
  ## PizzaItem component
  - See screen-one.png wireframe
- - [ ] create component   
+ - [X] create component   
  - [ ] display item on page
  - [ ] add or remove pizza - can only add one send pizza object to `ADDTO_CART`
     - see wireframe for example (add changes to remove on click?)
 
 ## CustomerInformation component
 - see screen-two.png wireframe
-- [ ] create component
+- [X] create component
 - [ ] input fields for 
     - [ ] Name `SET_CUSTOMERNAME`
     - [ ] Street Address `SET_STREETADDRESS`
@@ -79,7 +79,7 @@ return to top to start new branch
 
 ## Checkout component
 - see screen-three.png wireframe
-- [ ] create component
+- [X] create component
 - display customer info (from redux)
 - display type (from redux)
 - display name of pizza, cost of each item in table (from redux cart array of objects)
@@ -91,7 +91,7 @@ return to top to start new branch
 
 ## Admin component
 - see screen-admin.png wireframe
-- [ ] create component
+- [X] create component
 - [ ] get /api/orders
 - [ ] store results in ordersArray
 - [ ] map ordersArray on a table
