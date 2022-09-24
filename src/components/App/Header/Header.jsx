@@ -9,11 +9,11 @@ const Header = () => {
         <header className='App-header'>
             <h1 className='App-title'>Prime Pizza</h1>
             {
-                location.pathname === '/checkout' ? (
-                    // if pathname = /checkout show nothing
+                location.pathname === '/checkout' || location.pathname === '/admin' ? (
+                    // if pathname = /checkout or /admin show nothing
                     <></>
                 ) : (
-                    // if pathname != /checkout show cart total
+                    // if pathname != /checkout or /admin show cart total
                     <h1>Cart Total: {totalCost.toFixed(2)}</h1>
                 )
             }
