@@ -3,6 +3,8 @@ import { useHistory } from 'react-router-dom';
 import axios from 'axios';
 import { useState, useEffect } from 'react';
 import PizzaItem from '../PizzaItem/PizzaItem';
+import Typography from '@mui/material/Typography';
+import Grid from '@mui/material/Grid';
 
 const SelectPizza = () => {
     const history = useHistory();
@@ -25,20 +27,20 @@ const SelectPizza = () => {
     };
 
     return (
-        <>
-            <h1>Step 1: Select Your Pizza</h1>
+        <div>
+            <Typography sx={{ marginLeft: 5 }} variant="h3" gutterBottom>Step 1: Select Your Pizza</Typography>
 
-            <ul>
+            <Grid container spacing={2} >
                 {
                     pizzaArray.map((pizza) => {
-                        return <PizzaItem key={pizza.id} pizza={pizza}/>
+                        return <PizzaItem key={pizza.id} pizza={pizza} />
                     })
                 }
-            </ul>
+            </Grid>
 
-            <button onClick={() => history.push('/customer/information')} className="button">Enter Customer Information</button>
-        </>
+            <button onClick={() => history.push('/customer/information')} >Enter Customer Information</button>
+        </div>
     );
-}
+};
 
 export default SelectPizza;
