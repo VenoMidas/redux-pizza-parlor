@@ -49,6 +49,8 @@ return to top to start new branch
         - condition rendering? if useLocation === /checkout?
 - [ ] Add shopping cart icon to make pretty? (save for MUI later?)
 
+
+- [ ] MARK To Do
 ## SelectPizza component
 - See screen-one.png wireframe
 - [X] Create component
@@ -62,9 +64,20 @@ return to top to start new branch
  - See screen-one.png wireframe
  - [X] create component   
  - [ ] display item on page
- - [ ] add or remove pizza - can only add one send pizza object to `ADDTO_CART`
-    - see wireframe for example (add changes to remove on click?)
 
+ ----- Part 1 Above, Part 2 Below ---
+
+ - [ ] add or remove pizza - can only add one, send pizza object to `ADDTO_CART` and price to `UPDATE_TOTAL`
+        - onClick call function addToCart (name can be whatever you want)
+            - dispatch({ type: 'ADDTO_CART', payload: pizza })
+            - dispatch({ type: 'UPDATE_TOTAL', payload: pizza.cost }) 
+                - keep an eye on type (string or number) for math to work
+        - see wireframe for example (add changes to remove on click?)
+        - conditional rendering? for add/remove button? - simple toggle is fine to start
+
+
+
+- [ ] Oscar part 1
 ## CustomerInformation component
 - see screen-two.png wireframe
 - [X] create component
@@ -77,6 +90,7 @@ return to top to start new branch
         - [ ] add helper text to say "choose a type"
 - [ ] Button to move to next page `history.push(/checkout)` 
 
+- [ ] Oscar part 2
 ## Checkout component
 - see screen-three.png wireframe
 - [X] create component
@@ -89,6 +103,7 @@ return to top to start new branch
     - [ ] navigate `history.push(/)`
     - [ ] clear all reducers `CLEAR_ALL`
 
+- [ ] Meaghan To Do
 ## Admin component
 - see screen-admin.png wireframe
 - [X] create component
@@ -121,17 +136,13 @@ return to top to start new branch
 
 - No fancy styling required, save MUI for later
 
-- We still have questions around total cost. 
-    - can we dispatch 2 actions this would remove the need to loop through cart array to sum price for "Total: cost" output
-    - click add on the pizza
+- We CAN send 2 dispatches
         - dispatch the entire `pizza` object to ADDTO_CART
             - in redux would return [...state, action.payload]
         - dispatch just `pizza.price` to UPDATE_TOTAL
-            - in redux would return sum += action.payload
-- for example in the addToCart function...
-    - dispatch({ type: 'ADDTO_CART', payload: pizza }, { type: 'UPDATE_TOTAL', payload: pizza.cost })
-        - or
-    - dispatch({ type: 'ADDTO_CART', payload: pizza });
-      dispatch({ type: 'UPDATE_TOTAL', payload: pizza.cost })
+            - in redux would return state + action.payload
+    - function addToCart (name can be whatever you want)
+    - dispatch({ type: 'ADDTO_CART', payload: pizza }); - (sends entire pizza object to the cart)
+      dispatch({ type: 'UPDATE_TOTAL', payload: pizza.cost }) - (sends just the cost to the total cost reducer)
 
     
