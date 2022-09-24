@@ -1,10 +1,10 @@
 
-const PizzaItem = () => {
+const PizzaItem = ({ pizza }) => {
 
     return (
-        <>
-            <h1>This is the PizzaItem component</h1>
-        </>
+        <li>
+            <p>{pizza.name}, {pizza.description}, {pizza.price}</p>
+        </li>
     );
 }
 

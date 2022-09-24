@@ -54,16 +54,16 @@ return to top to start new branch
 ## SelectPizza component
 - See screen-one.png wireframe
 - [X] Create component
-- [ ] axios `get /api/pizza`
-    - [ ] store results in `pizzaArray`
-- [ ] map array 
-    - [ ] return `PizzaItem` components
-- [ ] Button to move to next page `history.push('/customer/information')`
+- [X] axios `get /api/pizza`
+    - [X] store results in `pizzaArray`
+- [X] map array 
+    - [X] return `PizzaItem` components
+- [X] Button to move to next page `history.push('/customer/information')`
 
  ## PizzaItem component
  - See screen-one.png wireframe
  - [X] create component   
- - [ ] display item on page
+ - [X] display item on page
 
  ----- Part 1 Above, Part 2 Below ---
 
