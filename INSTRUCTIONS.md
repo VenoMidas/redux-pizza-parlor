@@ -42,9 +42,7 @@ return to top to start new branch
 ## Header Component
 - See screen-one.png wireframe
 - [X] Make into separate component
-- [ ] Display Total: `cart` from redux
-    - [ ] `cart` will be an array of objects (pizzas)
-    - [ ] for/of loop on cart and sum price
+- [X] Display Total: `totalCost` from redux
     - [ ] do not display on step 3 checkout
         - condition rendering? if useLocation === /checkout?
 - [ ] Add shopping cart icon to make pretty? (save for MUI later?)
