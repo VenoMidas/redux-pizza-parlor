@@ -48,7 +48,7 @@ return to top to start new branch
 - [ ] Add shopping cart icon to make pretty? (save for MUI later?)
 
 
-- [ ] MARK To Do
+- [X] MARK To Do
 ## SelectPizza component
 - See screen-one.png wireframe
 - [X] Create component
@@ -65,7 +65,7 @@ return to top to start new branch
 
  ----- Part 1 Above, Part 2 Below ---
 
- - [ ] add or remove pizza - can only add one, send pizza object to `ADDTO_CART` and price to `UPDATE_TOTAL`
+ - [X] add or remove pizza - can only add one, send pizza object to `ADDTO_CART` and price to `UPDATE_TOTAL`
         - onClick call function addToCart (name can be whatever you want)
             - dispatch({ type: 'ADDTO_CART', payload: pizza })
             - dispatch({ type: 'UPDATE_TOTAL', payload: pizza.cost }) 
