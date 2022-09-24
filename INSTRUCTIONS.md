@@ -42,32 +42,30 @@ return to top to start new branch
 ## Header Component
 - See screen-one.png wireframe
 - [X] Make into separate component
-- [ ] Display Total: `cart` from redux
-    - [ ] `cart` will be an array of objects (pizzas)
-    - [ ] for/of loop on cart and sum price
-    - [ ] do not display on step 3 checkout
+- [X] Display Total: `totalCost` from redux
+    - [X] do not display on step 3 checkout
         - condition rendering? if useLocation === /checkout?
 - [ ] Add shopping cart icon to make pretty? (save for MUI later?)
 
 
-- [ ] MARK To Do
+- [X] MARK To Do
 ## SelectPizza component
 - See screen-one.png wireframe
 - [X] Create component
-- [ ] axios `get /api/pizza`
-    - [ ] store results in `pizzaArray`
-- [ ] map array 
-    - [ ] return `PizzaItem` components
-- [ ] Button to move to next page `history.push('/customer/information')`
+- [X] axios `get /api/pizza`
+    - [X] store results in `pizzaArray`
+- [X] map array 
+    - [X] return `PizzaItem` components
+- [X] Button to move to next page `history.push('/customer/information')`
 
  ## PizzaItem component
  - See screen-one.png wireframe
  - [X] create component   
- - [ ] display item on page
+ - [X] display item on page
 
  ----- Part 1 Above, Part 2 Below ---
 
- - [ ] add or remove pizza - can only add one, send pizza object to `ADDTO_CART` and price to `UPDATE_TOTAL`
+ - [X] add or remove pizza - can only add one, send pizza object to `ADDTO_CART` and price to `UPDATE_TOTAL`
         - onClick call function addToCart (name can be whatever you want)
             - dispatch({ type: 'ADDTO_CART', payload: pizza })
             - dispatch({ type: 'UPDATE_TOTAL', payload: pizza.cost }) 

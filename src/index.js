@@ -15,6 +15,10 @@ const cart = (state = [], action) => {
         return [...state, action.payload];
     } else if (action.type === 'CLEAR_ALL') {
         return [];
+    } else if (action.type === 'REMOVE_ITEM') {
+        // will return only the pizzas that do not match the action.payload
+        // if we had the ability to add multiple, this would remove ALL of that type of pizza
+        return [...state.filter(pizza => pizza !== action.payload)];
     } else {
         return state;
     };
@@ -27,6 +31,8 @@ const totalCost = (state = 0, action) => {
         return state + action.payload;
     } else if (action.type === 'CLEAR_ALL') {
         return 0;
+    } else if (action.type === 'SUBTRACT_TOTAL') {
+        return state - action.payload;
     } else {
         return state;
     };
