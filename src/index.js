@@ -31,6 +31,8 @@ const totalCost = (state = 0, action) => {
         return state + action.payload;
     } else if (action.type === 'CLEAR_ALL') {
         return 0;
+    } else if (action.type === 'SUBTRACT_TOTAL') {
+        return state - action.payload;
     } else {
         return state;
     };

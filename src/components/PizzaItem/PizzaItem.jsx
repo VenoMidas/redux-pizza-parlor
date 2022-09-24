@@ -14,6 +14,7 @@ const PizzaItem = ({ pizza }) => {
 
     const removeFromCart = () => {
         dispatch({ type: 'REMOVE_ITEM', payload: pizza });
+        dispatch({ type: 'SUBTRACT_TOTAL', payload: parseFloat(pizza.price) });
         setToggle(!toggle);
     };
 
