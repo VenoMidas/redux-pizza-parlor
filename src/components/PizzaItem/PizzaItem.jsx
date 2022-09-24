@@ -3,6 +3,7 @@ import { useState } from 'react';
 
 const PizzaItem = ({ pizza }) => {
     const dispatch = useDispatch();
+    // this is a local state, hitting "back" will reset and change all back to "add" button
     const [toggle, setToggle] = useState(false);
 
     const addToCart = () => {

@@ -43,7 +43,7 @@ return to top to start new branch
 - See screen-one.png wireframe
 - [X] Make into separate component
 - [X] Display Total: `totalCost` from redux
-    - [ ] do not display on step 3 checkout
+    - [X] do not display on step 3 checkout
         - condition rendering? if useLocation === /checkout?
 - [ ] Add shopping cart icon to make pretty? (save for MUI later?)
 
