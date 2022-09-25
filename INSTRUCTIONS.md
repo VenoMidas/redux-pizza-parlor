@@ -105,9 +105,9 @@ return to top to start new branch
 ## Admin component
 - see screen-admin.png wireframe
 - [X] create component
-- [ ] get /api/orders
-- [ ] store results in ordersArray
-- [ ] map ordersArray on a table
+- [X] get /api/orders
+- [X] store results in ordersArray
+- [X] map ordersArray on a table
 
 
 ## For Everyone
